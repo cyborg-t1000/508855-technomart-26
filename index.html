@@ -7,8 +7,13 @@
 <body>
 
 <header>
-  <a href="/"><img alt="Логотип Техномарта" src="img/logo-technomart.svg" width="109" height="19"></a>
-  <div>Тут будет поиск</div>
+  <a><img alt="Логотип Техномарта" src="img/logo-technomart.svg" width="109" height="19"></a>
+  <div>
+    <form method="get" action="https://echo.htmlacademy.ru">
+      <label for="search">Поиск:</label>
+      <input type="text" name="search" id="search">
+    </form>
+  </div>
   <ul>
     <li>Закладки: 0</li>
     <li>Корзина: 0</li>
@@ -219,24 +224,37 @@
       Обратная связь:<br>
       <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
     </p>
-
     <p>
       Разработано -<br>
       <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
     </p>
-
   </div>
 </footer>
 
 <section>
   <h2>Напишите нам</h2>
-  <!-- Здесь будет форма -->
+  <form method="get" action="https://echo.htmlacademy.ru">
+    <p>
+      <label for="feedback-name">Ваше имя:</label>
+      <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label for="feedback-email">Ваш имэйл:</label>
+      <input id="feedback-email" type="text" name="email" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="feedback-text">Текст письма:</label>
+      <input id="feedback-text" type="text" name="text" placeholder="В свободной форме">
+    </p>
+    <button type="submit">Отправить</button>
+  </form>
   <button type="button">Закрыть</button>
 </section>
 
 <section>
   <h2>Как до нас добраться</h2>
-  <!-- Здесь будет карта -->
+  <p><img src="img/map-big.png" alt="Офис компании по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
+          width="940" height="446"></p>
   <button type="button">Закрыть</button>
 </section>
 
